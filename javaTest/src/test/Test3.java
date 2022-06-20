@@ -20,16 +20,30 @@ public class Test3 {
 		 */
 		// ver1
 		// 객체별로 출력 방법?
-		arr.stream().forEach(v -> {
-			for(int i = 0; i < v.length; i++) {
-				System.out.println(v[i]);
-			}
-		});
+//		arr.stream().forEach(v -> {
+//			for(int i = 0; i < v.length; i++) {
+//				System.out.println(v[i]);
+//			}
+//		});
 		
 		// ver2
+		// 객체별로 출력 방법?
 		for(Integer[] numbers: arr) {
 			for(Object val : numbers) {
 				System.out.println(val);
+			}
+		}
+		
+		// ver3
+		// 정규 for구문
+		for (int i = 0; i < arr.size(); i++) {
+			for (int j = 0; j < arr.get(i).length; j++) {
+				if(arr.get(i).length-1 == j) {
+					System.out.println(arr.get(i)[j]);
+				}else {
+					System.out.print(arr.get(i)[j] + " ");
+				}
+				
 			}
 		}
 		

@@ -26,11 +26,8 @@ public class Test3 {
 		});
 		
 		// ver2
-		// 객체별로 출력 방법?
 		for(Integer[] numbers: arr) {
-			for(Object val : numbers) {
-				System.out.println(val);
-			}
+			System.out.println(Arrays.toString(numbers)); 
 		}
 		
 		// ver3

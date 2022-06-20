@@ -19,12 +19,11 @@ public class Test3 {
 		 * 31 32 33 34 
 		 */
 		// ver1
-		// 객체별로 출력 방법?
-//		arr.stream().forEach(v -> {
-//			for(int i = 0; i < v.length; i++) {
-//				System.out.println(v[i]);
-//			}
-//		});
+		arr.stream().forEach(v -> {
+			for(int i = 0; i < v.length; i++) {
+				System.out.println(Arrays.toString(v));
+			}
+		});
 		
 		// ver2
 		// 객체별로 출력 방법?

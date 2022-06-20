@@ -20,16 +20,16 @@ public class Test3 {
 		 */
 		// ver1
 		arr.stream().forEach(v -> {
-			for(int i = 0; i < v.length; i++) {
-				System.out.println(Arrays.toString(v));
-			}
+			System.out.println(Arrays.toString(v));
 		});
-		
+
+		System.out.println();
 		// ver2
 		for(Integer[] numbers: arr) {
 			System.out.println(Arrays.toString(numbers)); 
 		}
 		
+		System.out.println();
 		// ver3
 		// 정규 for구문
 		for (int i = 0; i < arr.size(); i++) {
